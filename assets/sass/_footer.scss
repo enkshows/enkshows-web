@@ -1,0 +1,32 @@
+.footer {
+  position: relative;
+  height: auto;
+  margin-top: 200px;
+  padding: 0 20px;
+  line-height: 40px;
+  color: $enk-white;
+  background: url(../img/stripe-dark.png) repeat;
+  clear:both;
+  a {
+    color: $enk-red;
+    text-decoration: none;
+    text-transform: uppercase;
+    &:hover {color: $enk-white;}
+  }
+  ul {margin: 0; display: inline-block;}
+  li {margin: 0; display: inline-block; }
+  .address li {margin: 0 10px 0 0;}
+  .address li:first-child {margin-left: 0;}
+  .address li:last-child {margin-right: 0;}
+  .contact {float: right; text-align: right;}
+  
+
+  @media only screen and (max-width: 921px) {
+    height: auto;
+   .contact {display: none;}
+   ul {display: block;}
+   .address li {margin-left: 0;}
+    .address li:last-child {margin-right: 0;}
+  }
+}
+

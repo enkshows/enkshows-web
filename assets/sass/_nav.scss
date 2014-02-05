@@ -1,0 +1,84 @@
+// Page Navigation
+.nav, .main--nav {
+	li a {
+		font-size: 12px;
+		line-height: 1.5;
+		text-decoration: none; 
+		text-transform: uppercase;
+		&:hover {color: $enk-red;}
+	}
+}
+
+.nav {
+	// NEED TO FIX!
+	position: fixed;
+	top: 20px; 
+	width: 155px;
+	background: $enk-black;
+	background: url(../img/stripe-dark.png) repeat;
+	
+	.home {margin-bottom: 10px;}
+	
+	#shownav {
+		margin: 0 0 10px 10px;
+		a {
+			color: $enk-gray;
+			&:hover {color: $enk-red;}
+		}
+	}
+
+	li {
+		padding: 0 10px 0;
+		a {display: inline-block; color: $enk-white; font-size: 10px; font-weight: 600; }
+	}
+	.home {
+		display: block;
+		height: 70px;
+		padding: 0;
+		background: $enk-red;
+		background: url(../img/main-nav.png) no-repeat;
+		background-position: 0 0;
+		text-indent: -9999px;
+		-webkit-transition: all 200ms ease;
+		&:hover {
+			background: $enk-blue;
+			background: url(../img/main-nav.png) no-repeat;
+			background-position: 0 -70px;
+		}
+	}
+	.icons {
+		text-align: center;
+		padding: 10px 0;
+		li {display: inline-block; padding: 0 5px;}
+		li a { font-size: 14px; color: $enk-social;
+			&:hover {color: $enk-white;}
+		}
+	}
+}
+
+
+// Main Navigation
+.main--nav {
+	float: left;
+	// margin-right: 20px;
+	li {
+		border-top: 1px solid $enk-black;
+		a {
+				display: inline-block;
+				width: 230px;
+				padding: 5px 0 10px 0;
+				font-weight: 600;
+			}
+	}
+	.nav-floor-plan {padding-bottom: 5px;}
+	.sub-nav {
+		li {
+			border-top: none;
+			a {
+				padding: 0 0 10px 10px;
+				border: none;
+				font-size: 10px;
+			}
+		}
+	}
+}

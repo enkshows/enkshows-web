@@ -1,0 +1,28 @@
+.faq-question {
+  display: block;
+  margin-bottom: 15px; 
+  font-size: 14px;
+}
+
+.faq-content {
+  h4 {margin-bottom: 5px;}
+  address {margin-bottom: 20px;}
+  ul {float: none !important;}
+  li {font-size: 12px;}
+
+}
+
+
+.guide-exhib-l, .guide-exhib-r {
+  float: left; 
+  width: 45%;
+  a.content-notice {text-transform: uppercase;}
+}
+.guide-exhib-l {margin-right: 40px;}
+.guide-exhib-r {
+  margin-right:0; 
+  padding-right: 0;
+  ul { width: 320px; padding-right: 0; }
+  li {line-height: 1.5;}
+  span {display: inline-block; font-weight: 600; text-align: right; width: 15px; margin-right: 5px;}
+}

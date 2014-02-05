@@ -1,0 +1,66 @@
+#press {
+  figure {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 115px;
+    margin: 10px;
+    
+    &:hover figcaption {
+      opacity: 1;
+      bottom: 0;
+    }
+    &:before {
+      content: "+";
+      display: block;
+      position: absolute;
+      bottom: 0; right: 0;
+      background: rgba(0,0,0,1);
+      color: $enk-white;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 1em;
+      font-weight: bold;
+      text-align: center;
+      opacity: 1;
+       cursor: pointer; 
+      -webkit-transition: all 0.6s ease;
+       -moz-transition: all 0.6s ease;
+       -o-transition: all 0.6s ease;
+    }
+    &:hover:before {
+      opacity: 0;
+    }
+  }
+
+  figcaption {
+    position: absolute;
+    background: rgba(0,0,0,.8);
+    color:  $enk-white;
+    padding: 5px;
+    width: 100%;
+    height: 50px;
+    opacity: 0;
+    bottom: -30%;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+    a {color: $enk-white;}
+  }
+
+  img {height: 100%;}
+
+  // .press-item {
+  //   width: 90px;
+  //   height: 120px;
+  //   overflow: hidden;
+  //   margin: 0 10px;
+  //   -webkit-transition: 1s all ease; 
+  // }
+  // figure {display: inline-block;}
+  // figcaption {position: relative; top: 0; -webkit-transition: 300ms all ease;}
+  // .press-item img {height: 100%;}
+  // .press-item img:hover + figcaption { display: block; height: 100%; background: rgba(0,0,0,0.5); position: relative; top: -50px; color: $enk-white;}
+}

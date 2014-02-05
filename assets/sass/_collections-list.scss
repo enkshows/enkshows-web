@@ -1,0 +1,29 @@
+#collections {
+  table {
+    width: 520px;
+    float: right;
+    text-transform: uppercase; 
+    
+  tr td {padding: 5px;}
+
+  tbody {
+    > tr {
+      background: $enk-gray;
+        &:nth-child(odd) {background: darken($enk-gray, 5%);}
+      }
+    }
+  }
+  .exhib-name {width: 80%;}
+  .exhib-note {font-size: 10px; margin-left: 5px;}
+  .exhib-details {margin-left: 5px; text-align: right;}
+
+
+
+
+
+
+  .exhibit-nav {
+    float: left;
+  }
+
+}

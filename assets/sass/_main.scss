@@ -1,0 +1,140 @@
+.main--header {
+	display: block;
+	width: 100%;
+	min-width: 940px;
+	height: auto;
+	margin-top: 20px;
+	overflow: hidden;
+img {display: block;margin: auto;}
+}
+
+
+.main {
+	position: relative;
+	width: 760px;
+	margin: auto;
+
+	.main--content {overflow: hidden;}
+}
+
+.show-block {margin: 40px 0 20px; overflow: hidden;}
+.show-content {overflow: hidden;}
+.show-element {position: relative; float: left;}
+
+.show-element__content {overflow: hidden;}
+
+.show-element__sections {
+	border-bottom: 1px solid $enk-black;
+	position: relative; 
+	margin-bottom: 50px;
+}
+
+.img {margin-right: 20px; float: left;}
+.btn {background: $enk-black; color: $enk-white; text-decoration: none; text-transform: uppercase;}
+
+
+
+
+.show-attend {
+	width: 365px;
+	display: inline-block; 
+	margin: 20px 20px 0 0;
+	padding: 15px 20px;
+	background: url(../img/stripe-dark.png) repeat;
+	text-decoration: none;
+
+	&:nth-child(odd){margin-right: 0;}
+	&:hover {background: $enk-black;}
+
+	a {color: white; text-decoration: none;}
+	h3, p {margin: 0;}
+	h3 {color: $enk-red;}
+	p {font-weight: 600;}
+}
+
+
+
+.expand {
+			display: inline-block;
+			position: absolute;
+			right: 0; 
+			bottom: 0;
+			width: 100px;
+			height: 25px;
+			color: $enk-white;
+			background: $enk-black;
+			cursor: pointer;
+			text-align: center;
+			line-height: 25px;
+			text-decoration: none;
+			z-index: 10;
+			@include animate(all, 300ms, ease);
+			&:hover {
+				text-decoration: none;
+				background: lighten($enk-black, 10%);
+			}
+		}
+
+
+
+
+
+
+
+
+
+// 	.show-header {
+// 		img {display: block;margin: auto;}
+// 	}
+
+// // Main Column
+
+
+// // Main Column Contents
+	
+// 	.main--content {
+// 		float: left; 
+// 		margin-bottom: 75px;
+		
+// 		.exhib-content {margin-bottom: 40px; overflow: hidden;}
+
+// 		.content--module { display: block; width: 100%; float: left; position: relative; margin: 20px 0 50px ;}
+
+		
+// 		.attend-btn {
+// 			width: 365px;
+// 			display: inline-block; 
+// 			margin: 20px 20px 0 0;
+// 			padding: 15px 20px;
+			
+// 			background: $enk-black; 
+// 			background: url(../img/stripe-dark.png) repeat;
+// 			color: white;
+// 			text-decoration: none;
+// 			&:nth-child(even){margin-right: 0;}
+
+// 			h3, p {margin: 0;}
+
+// 			h3 {color: $enk-red;}
+
+// 			p {font-weight: 600;}
+// 		}
+
+// 		.main-content {
+// 			position: relative;
+// 			height: 250px;
+// 			float: left;
+// 			// padding: 50px 0 10px;
+// 			border-bottom: 1px solid $enk-black;
+// 			overflow: hidden;
+// 			// &:last-child {border: 0; height: 100%; padding-top: 100px}
+// 		}
+
+// 		.img {margin-right: 20px; float: left;}
+
+// 		.main-description p {overflow: hidden;}
+
+// 		
+// 	}
+	
+

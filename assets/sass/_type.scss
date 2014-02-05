@@ -1,0 +1,14 @@
+
+body {font-family: $main-font; font-size: 12px; line-height: 1.5;}
+h1,h2,h3,h4,h5,h6 {text-transform: uppercase; font-weight: 600;}
+h1 {font-size: 34px; font-weight: 700; color: $enk-red;}
+h2 {font-size: 20px; font-weight: 600; margin: 10px 0; }
+h3 {font-size: 18px; margin-bottom: 15px; }
+
+p {font-size: 12px; margin-bottom: 20px;}
+a {color: $enk-black;
+  &:hover {color: $enk-red;}
+}
+
+.content-notice {font-weight: 600;}
+.alert {color: $enk-red;}

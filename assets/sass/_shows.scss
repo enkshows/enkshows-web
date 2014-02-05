@@ -1,0 +1,76 @@
+.shows {
+  width: 370px;
+  height: 100%;
+  margin: 20px 20px 0 0;
+  background: $enk-black;
+  &:nth-child(even) {margin-right: 0;}
+  }
+
+
+.show-img {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 260px;
+  a {display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+
+  }
+  .show-detail {
+    display: block;
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 70px;
+    padding: 10px;
+    background: $enk-black;
+    color: $enk-white;
+    h1, p {line-height: 1;}
+  }
+}
+
+
+
+
+
+
+  .show-animate {
+    @include animate(all, 350ms, ease);
+    &:hover {
+      background-position: 0 -290px;
+    }
+  }
+  .ac {
+    background: url(../img/shows-circuit.png) no-repeat;
+    background-position: 0px -30px;
+  }
+  .ic {
+    background: url(../img/shows-intermezzo.png) no-repeat;
+    background-position: 0px -30px;
+  }
+  .cc {
+    background: url(../img/shows-cc.png) no-repeat;
+    background-position: 0px -30px;
+  }
+  .fc {
+    background: url(../img/shows-coterie.png) no-repeat;
+    background-position: 0px -30px;
+  }
+  .ev {
+    background: url(../img/shows-enkvegas.png) no-repeat;
+    background-position: 0px -30px;
+  }
+  .sole {
+    background: url(../img/shows-sole.png) no-repeat;
+    background-position: 0px -30px;
+  }
+  .tmrw {
+    background: url(../img/shows-tmrw.png) no-repeat;
+    background-position: 0px -30px;
+  }
+
+
+
+
+

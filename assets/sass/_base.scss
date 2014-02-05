@@ -1,0 +1,21 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "susy";
+@import "compass/reset";
+@import "variables", "mixins";
+
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+$total-columns  : 10;
+$column-width   : 94px;
+$gutter-width   : 0px;
+$grid-padding   : $gutter-width;
+
+
+$container-style: static;
+$container-width: 940px;
+
+$show-grid-backgrounds  : true;

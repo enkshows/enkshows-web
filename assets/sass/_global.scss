@@ -1,0 +1,33 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+html, body {
+  width: 100%; 
+}
+html, body, #map-canvas {
+  height: 100%;
+  margin: 0px;
+  padding: 0px
+
+}
+
+body {background: $background-color;background: url(../img/stripe-light.png) repeat;}
+
+.container {
+  position: relative;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: 100px;
+  padding-top: 20px;
+  margin: 0 auto -40px;
+  clear: both;
+  @include container;
+}
+
+ol li { list-style-type: decimal; margin-left: 20px;}
+
+.active {color: $enk-red !important;}
+.lfl {float: left;}
+.rfl {float: right;}

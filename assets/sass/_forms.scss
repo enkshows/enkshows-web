@@ -1,0 +1,117 @@
+select {
+  height: 30px;
+  font-family: $main-font;
+  color: $enk-white;
+  background: $enk-black;
+  text-transform: uppercase;
+  border: 0;
+}
+
+#select-show {
+  display: block;
+}
+
+::-webkit-input-placeholder {
+   color: $enk-white;
+}
+/* Firefox 18- */
+:-moz-placeholder { 
+   color: $enk-white;  
+}
+/* Firefox 19+ */
+::-moz-placeholder {  
+   color: $enk-white;  
+}
+:-ms-input-placeholder {  
+   color: $enk-white;  
+}
+
+
+form {
+  input[type="text"] {
+    width: 370px;
+    height: 30px;
+    margin: 10px 0 0 5px;
+    padding: 10px 15px;
+    border: none;
+    font-family: $main-font;
+    background: $enk-black;
+    color: $enk-white;
+    text-transform: uppercase;
+    // &:nth-child(even) {margin-right: 0;}
+  }
+  input[type="text"].visitor-source {width: 99%;}
+  input[type="text"].third,
+  select.third {
+    width: 115px; 
+    border: 0; 
+  }
+  // select.state {margin: 0 10px; }
+
+  .form-select {
+    display: inline-block; 
+    margin-right: 45px;
+  }
+  fieldset {margin: 10px 0 20px;}
+  legend { 
+    margin: 10px 0 5px;
+    font-size: 14px; 
+    font-weight: bold;
+    text-transform: uppercase;
+    span {font-size: 10px; text-transform: normal;}
+  }
+label {
+  margin: 0 5px;
+  input[type="checkbox"] {margin-right: 10px;}
+}
+
+
+.captcha {margin: 0 10px;}
+
+button {
+  width: 100px;
+  height: 35px;
+  color: $enk-white;
+  font-size: 16px;
+  border: 0;
+  cursor: pointer;
+  background: $enk-black;
+
+  @include animate(all, 300ms, ease);
+    &:hover {background: lighten($enk-black, 20%);}
+}
+
+
+.submission {
+  display: inline-block; 
+  float: right; 
+  width: 380px; 
+  overflow: hidden;
+  fieldset {display: inline-block;}
+  label {margin-right: 10px;}
+  input[type="text"] {margin: 10px;}
+}
+
+textarea {
+  display: block;
+  width: 745px;
+  height: 100px;
+  margin: 10px auto;
+  padding: 10px;
+  font-family: $main-font;
+  font-size: 1em;
+  background: $enk-black;
+  color: $enk-white;
+  resize: none;
+  overflow: auto;
+  border: 0;
+}
+
+
+}
+
+.lt-margin {margin-left: 10px !important;}
+.rt-margin {margin-right: 10px !important;}
+
+.third {width: 115px;}
+.half {width: 185px;}
